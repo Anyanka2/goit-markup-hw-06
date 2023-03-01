@@ -422,10 +422,20 @@
             </li>
           </ul>
         </div>
-        
+        <form>
+          <label for="subscribe"
+            >Sudscribe <input id="subscribe" type="email" name="subscribe"
+          /></label>
+          <button type="submit">
+            Subscribe
+            <svg class="icon-send">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" type="button" data-modal-close>
           <svg class="icon-cross">
@@ -435,16 +445,23 @@
         <h2>Leave your contacts and we will call you back</h2>
         <form name="contact-form" autocomplete="off" novalidate>
           <label for="user-name"
-            >Name <input id="user-name" type="text" name="user-name" autofocus
-          /></label>
-          <label for="user-name"
+            >Name
+            <input id="user-name" type="text" name="user-name" autofocus /><svg
+              class="icon-name"
+            >
+              <use href="./images/icons.svg#icon-name"></use></svg></label>
+          <label for="user-phone"
             >Phone
             <input id="user-phone" type="tel" name="user-phone" autofocus
-          /></label>
-          <label for="user-name"
+          /><svg class="icon-phone">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg></label>
+          <label for="user-email"
             >Email
             <input id="user-email" type="email" name="user-email" autofocus
-          /></label>
+          /><svg class="icon-email">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg></label>
           <label for="user-comment"
             >Comment
             <textarea
@@ -456,7 +473,8 @@
           </label>
           <label>
             <input type="checkbox" name="privacy-policy" value="reading" />
-            I accept the terms and conditions of the <a href="">Privacy Policy</a>
+            I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
           </label>
           <button type="submit">Send</button>
         </form>
