@@ -424,7 +424,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="close-button" type="button" data-modal-close>
           <svg class="icon-cross">
@@ -433,11 +433,26 @@
         </button>
         <h2>Leave your contacts and we will call you back</h2>
         <form name="contact-form" autocomplete="off" novalidate>
-          <label for="user-name">Name</label>
-          <input id="user-name" type="text" name="user-name" autofocus />
-          <label for="user-comment">Comment</label>
-          <textarea for="user-comment" id="user-comment" placeholder="Text input">
-          </textarea>
+          <label for="user-name"
+            >Name <input id="user-name" type="text" name="user-name" autofocus
+          /></label>
+          <label for="user-name"
+            >Phone
+            <input id="user-phone" type="tel" name="user-phone" autofocus
+          /></label>
+          <label for="user-name"
+            >Email
+            <input id="user-email" type="email" name="user-email" autofocus
+          /></label>
+          <label for="user-comment"
+            >Comment
+            <textarea
+              id="user-comment"
+              type="text"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </label>
           <button type="submit">Send</button>
         </form>
       </div>
