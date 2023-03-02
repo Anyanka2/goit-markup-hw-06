@@ -446,7 +446,13 @@ img {
 }
 .footer-container {
   display: flex;
-  gap: 120px;
+  min-width: 1158px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.socials {
+  margin-left: 118px;
 }
 .footer-text {
   color: var(--accent-cornflower);
@@ -460,7 +466,8 @@ img {
 .footer-content {
   display: inline-block;
 }
-.footer-content h2 {
+.footer-content h2,
+.footer-content label {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
@@ -471,6 +478,7 @@ img {
   color: var(--light-mode-cloud);
   line-height: 1.16;
 }
+
 .footer-socials-list {
   display: flex;
   gap: 16px;
@@ -501,6 +509,82 @@ img {
 .footer-socials-link:hover {
   background-color: var(--succes-green);
 }
+.footer-form {
+  display: inline-block;
+  margin-right: 0;
+  margin-left: 80px;
+}
+.subscribe-form {
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 30px;
+  justify-content: right;
+}
+.subscribe-title {
+  display: block;
+  margin-top: 0;
+}
+/*.subscribe-title{
+font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color-white);
+  margin-bottom: 16px;
+}*/
+.subscribe-input ::placeholder {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-right: 16px;
+}
+.subscribe-input {
+  background-color: var(--dark-navy-blue);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 16px;
+  min-width: 264px;
+  width: auto;
+}
+.icon-subscribe {
+  width: 24px;
+  height: 20px;
+  fill: var(--background-color-white);
+}
+.footer-button {
+  display: inline-block;
+  margin-left: 24px;
+}
+.subscribe-button {
+  display: flex;
+  width: 165px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: var(--text-color-white);
+  background-color: var(--primary-brand-iris);
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  justify-content: center;
+  text-align: center;
+  transition: background-color var(--transition-hover);
+  gap: 16px;
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--pressed-state-ocean);
+}
+/*.icon-subscribe-bg {
+  width: 24px;
+  height: 24px;
+}*/
 /* modal */
 .backdrop {
   position: fixed;
@@ -558,8 +642,39 @@ img {
 }
 .close-button:hover {
   background-color: var(--pressed-state-ocean);
+  fill: var(--background-color-white);
 }
 .icon-cross {
   width: 8px;
   height: 8px;
+}
+/* modal form*/
+.icon-name {
+  width: 12px;
+  height: 12px;
+}
+.icon-name-bg {
+  width: 18px;
+  height: 18px;
+  border: 1px solid red;
+}
+
+.icon-phone {
+  width: 13px;
+  height: 13px;
+}
+.icon-phone-bg {
+  width: 18px;
+  height: 24px;
+  border: 1px solid red;
+}
+
+.icon-email {
+  width: 15px;
+  height: 12px;
+}
+.icon-email-bg {
+  width: 18px;
+  height: 24px;
+  border: 1px solid red;
 }
