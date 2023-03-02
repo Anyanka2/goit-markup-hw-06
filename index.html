@@ -388,8 +388,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-
-        <div class="footer-content">
+        <div class="footer-content socials">
           <h2>Social media</h2>
           <ul class="footer-socials-list">
             <li class="footer-socials-item">
@@ -422,17 +421,32 @@
             </li>
           </ul>
         </div>
-        <form>
-          <label for="subscribe"
-            >Sudscribe <input id="subscribe" type="email" name="subscribe"
-          /></label>
-          <button type="submit">
-            Subscribe
-            <svg class="icon-send">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+        <div class="footer-content">
+          <div class="footer-form">
+            <form class="subscribe-form">
+              <label class="subscribe-title" for="subscribe">Subscribe</label>
+              <input
+                class="subscribe-input"
+                id="subscribe"
+                type="email"
+                name="subscribe"
+                placeholder="E-mail"
+                autocomplete="on"
+                required
+              />
+            </form>
+          </div>
+          <div class="footer-button">
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <div class="icon-subscribe-bg" style="display: inline-block">
+                <svg class="icon-subscribe">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -442,37 +456,52 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <h2>Leave your contacts and we will call you back</h2>
-        <form name="contact-form" autocomplete="off" novalidate>
-          <label for="user-name"
-            >Name
-            <input id="user-name" type="text" name="user-name" autofocus /><svg
-              class="icon-name"
-            >
-              <use href="./images/icons.svg#icon-name"></use></svg></label>
-          <label for="user-phone"
-            >Phone
-            <input id="user-phone" type="tel" name="user-phone" autofocus
-          /><svg class="icon-phone">
-            <use href="./images/icons.svg#icon-phone"></use>
-          </svg></label>
-          <label for="user-email"
-            >Email
-            <input id="user-email" type="email" name="user-email" autofocus
-          /><svg class="icon-email">
-            <use href="./images/icons.svg#icon-email"></use>
-          </svg></label>
-          <label for="user-comment"
-            >Comment
-            <textarea
-              id="user-comment"
-              type="text"
-              name="user-comment"
-              placeholder="Text input"
-            ></textarea>
-          </label>
+        <h2 class="modal-title">
+          Leave your contacts and we will call you back
+        </h2>
+        <form
+          class="modal-form"
+          name="contact-form"
+          autocomplete="off"
+          novalidate
+        >
+          <label class="user-name" for="user-name">Name</label>
+          <div class="inpute-name">
+            <input id="user-name" type="text" name="user-name" autofocus />
+            <div class="icon-name-bg">
+              <svg class="icon-name">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+          </div>
+          <label for="user-phone">Phone</label>
+          <input id="user-phone" type="tel" name="user-phone" autofocus />
+          <div class="icon-phone-bg">
+            <svg class="icon-phone">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label for="user-email">Email</label>
+          <input id="user-email" type="email" name="user-email" autofocus />
+          <div class="icon-email-bg">
+            <svg class="icon-email">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label for="user-comment">Comment</label>
+          <textarea
+            id="user-comment"
+            type="text"
+            name="user-comment"
+            placeholder="Text input"
+          ></textarea>
           <label>
-            <input type="checkbox" name="privacy-policy" value="reading" />
+            <input
+              id="privacy-policy"
+              type="checkbox"
+              name="privacy-policy"
+              value="reading"
+            />
             I accept the terms and conditions of the
             <a href="">Privacy Policy</a>
           </label>
