@@ -453,7 +453,7 @@ img {
   justify-content: center;
 }
 .socials {
-padding-left: 120px;
+  padding-left: 120px;
 }
 .footer-text {
   color: var(--accent-cornflower);
@@ -479,7 +479,6 @@ padding-left: 120px;
   color: var(--light-mode-cloud);
   line-height: 1.16;
 }
-
 .footer-socials-list {
   display: flex;
   gap: 16px;
@@ -525,13 +524,6 @@ padding-left: 120px;
   display: block;
   margin-top: 0;
 }
-/*.subscribe-title{
-font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--text-color-white);
-  margin-bottom: 16px;
-}*/
 .subscribe-input ::placeholder {
   font-family: inherit;
   font-size: 12px;
@@ -582,10 +574,7 @@ font-family: Roboto;
 .subscribe-button:focus {
   background-color: var(--pressed-state-ocean);
 }
-/*.icon-subscribe-bg {
-  width: 24px;
-  height: 24px;
-}*/
+
 /* modal */
 .backdrop {
   position: fixed;
