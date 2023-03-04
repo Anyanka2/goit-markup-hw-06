@@ -446,13 +446,14 @@ img {
 }
 .footer-container {
   display: flex;
-  min-width: 1158px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  justify-content: center;
 }
 .socials {
-  margin-left: 118px;
+padding-left: 120px;
 }
 .footer-text {
   color: var(--accent-cornflower);
@@ -512,7 +513,7 @@ img {
 .footer-form {
   display: inline-block;
   margin-right: 0;
-  margin-left: 80px;
+  padding-left: 80px;
 }
 .subscribe-form {
   flex-wrap: wrap;
