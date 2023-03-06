@@ -739,6 +739,10 @@ img {
   text-decoration-line: underline;
   color: var(--primary-brand-iris);
   padding-left: 4px;
+  transition: color var(--transition-hover);
+}
+.checkbox-label a:hover{
+  color: var(--pressed-state-ocean);
 }
 .checkbox-label {
   position: relative;
