@@ -721,6 +721,7 @@ img {
   top: 50%;
   transform: translateY(0);
   fill: var(--overlay-navy-blue-modal);
+  transition: fill var(--transition-hover);
 }
 .user-input:focus + .form-icons {
   fill: var(--primary-brand-iris);
