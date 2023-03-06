@@ -742,13 +742,16 @@ img {
   padding-left: 4px;
   transition: color var(--transition-hover);
 }
-.checkbox-label a:hover{
+.checkbox-label a:hover {
   color: var(--pressed-state-ocean);
 }
 .checkbox-label {
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
+  padding: 0 24px;
   color: var(--helper-text-light-slate);
 }
 .icon-checkbox {
