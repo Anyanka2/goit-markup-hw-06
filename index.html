@@ -459,53 +459,71 @@
         <h2 class="modal-title">
           Leave your contacts and we will call you back
         </h2>
-        <form
-          class="modal-form"
-          name="contact-form"
-          autocomplete="off"
-          novalidate
-        >
-          <label class="user-name" for="user-name">Name</label>
-          <div class="inpute-name">
-            <input id="user-name" type="text" name="user-name" autofocus />
-            <div class="icon-name-bg">
-              <svg class="icon-name">
+        <form class="modal-form" name="contact-form" autocomplete="on">
+          <div class="modal-block">
+            <div class="user-form">
+              <label class="user-label" for="user-name">Name</label>
+              <input
+                class="user-input"
+                id="user-name"
+                type="text"
+                name="user-name"
+                autofocus
+              />
+              <svg class="icon-name form-icons">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
+            <div class="user-form">
+              <label class="user-label" for="user-label">Phone</label>
+              <input
+                class="user-input"
+                id="user-phone"
+                type="tel"
+                name="user-phone"
+              />
+              <svg class="icon-phone form-icons">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <div class="user-form">
+              <label class="user-label" for="user-email">Email</label>
+              <input
+                class="user-input"
+                id="user-email"
+                type="email"
+                name="user-email"
+                required
+              />
+              <svg class="icon-email form-icons">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            <div class="user-form">
+              <label class="user-label" for="user-comment">Comment</label>
+              <textarea
+                class="user-textarea"
+                id="user-comment"
+                name="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+            <div class="user-form policy-form">
+              <input
+                class="checkbox-input"
+                id="privacy-policy"
+                type="checkbox"
+                name="privacy-policy"
+                value="reading"
+                required
+              />
+              <label class="checkbox-label" for="privacy-policy">
+                I accept the terms and conditions of the
+                <a href="">Privacy Policy</a>
+              </label>
+            </div>
           </div>
-          <label for="user-phone">Phone</label>
-          <input id="user-phone" type="tel" name="user-phone" autofocus />
-          <div class="icon-phone-bg">
-            <svg class="icon-phone">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </div>
-          <label for="user-email">Email</label>
-          <input id="user-email" type="email" name="user-email" autofocus />
-          <div class="icon-email-bg">
-            <svg class="icon-email">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </div>
-          <label for="user-comment">Comment</label>
-          <textarea
-            id="user-comment"
-            type="text"
-            name="user-comment"
-            placeholder="Text input"
-          ></textarea>
-          <label>
-            <input
-              id="privacy-policy"
-              type="checkbox"
-              name="privacy-policy"
-              value="reading"
-            />
-            I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
-          </label>
-          <button type="submit">Send</button>
+          <button class="policy-button" type="submit">Send</button>
         </form>
       </div>
     </div>
