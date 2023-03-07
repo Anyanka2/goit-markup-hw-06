@@ -217,7 +217,7 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.advantages-list li {
+.advantages-item {
   list-style-type: none;
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
@@ -273,11 +273,11 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .team-list {
   display: flex;
   gap: 24px;
-  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .socials-list {
   display: flex;
@@ -309,11 +309,12 @@ img {
 .socials-link:hover {
   background-color: var(--pressed-state-ocean);
 }
+.customers {
+  padding-bottom: 120px;
+}
 .customers-list {
   display: flex;
   gap: 24px;
-  flex-basis: calc((100% - 5 * 24px) / 6);
-  padding-bottom: 120px;
   justify-content: center;
 }
 .customers-icon {
@@ -323,6 +324,7 @@ img {
 .customers-item {
   width: 168px;
   height: 88px;
+  flex-basis: calc((100% - 5 * 24px) / 6);
 }
 .customers-link {
   display: flex;
@@ -454,7 +456,7 @@ img {
   justify-content: center;
 }
 .socials {
-  padding-left: 120px;
+  margin-left: 120px;
 }
 .footer-text {
   color: var(--accent-cornflower);
@@ -470,7 +472,6 @@ img {
 }
 .footer-content h2,
 .footer-content p {
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   color: var(--text-color-white);
@@ -484,7 +485,7 @@ img {
   display: flex;
   gap: 16px;
   margin-top: 8px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   justify-content: center;
 }
 .footer-socials-icon {
@@ -513,17 +514,13 @@ img {
 .footer-form {
   display: inline-block;
   margin-right: 0;
-  padding-left: 80px;
+  margin-left: 80px;
 }
 .subscribe-form {
   flex-wrap: wrap;
   gap: 16px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   justify-content: right;
-}
-.subscribe-title {
-  display: block;
-  margin-top: 0;
 }
 .subscribe-input ::placeholder {
   font-family: inherit;
@@ -556,7 +553,6 @@ img {
   display: flex;
   width: 165px;
   height: 40px;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -605,13 +601,14 @@ img {
   width: 100%;
   height: 100%;
   max-width: 408px;
-  max-height: 576px;
+  max-height: 584px;
   background-color: var(--light-mode-cloud);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--transition-hover);
   transform: scale(1.2);
+  padding: 72px 24px 24px;
 }
 .close-button {
   position: absolute;
@@ -642,31 +639,27 @@ img {
 /* modal form*/
 .modal-title {
   color: var(--dark-navy-blue);
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  padding-top: 72px;
-  padding-bottom: 16px;
+  margin-bottom: 14px;
+  line-height: 1.33;
 }
 .modal-block {
   display: flex;
   flex-direction: column;
-
   font-size: 12px;
   text-align: left;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--helper-text-light-slate);
   margin: 0;
-  padding: 0 24px;
 }
 .user-label,
 .user-input,
 .user-textarea,
 .checkbox-label {
   color: var(--helper-text-light-slate);
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -680,6 +673,8 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border var(--transition-hover);
+  margin-bottom: 8px;
+  margin-top: 4px;
 }
 .user-input:focus,
 .user-textarea:focus {
@@ -695,13 +690,13 @@ img {
   padding-left: 16px;
   padding-top: 8px;
   transition: border var(--transition-hover);
+  margin-top: 4px;
 }
 .user-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 .user-form {
   position: relative;
-  margin-top: 8px;
 }
 .icon-name {
   width: 12px;
@@ -734,16 +729,7 @@ img {
 .policy-form {
   display: flex;
   align-content: center;
-  margin-top: 13px;
-}
-.checkbox-label a {
-  text-decoration-line: underline;
-  color: var(--primary-brand-iris);
-  padding-left: 4px;
-  transition: color var(--transition-hover);
-}
-.checkbox-label a:hover {
-  color: var(--pressed-state-ocean);
+  margin-top: 8px;
 }
 .checkbox-label {
   position: relative;
@@ -751,8 +737,16 @@ img {
   justify-content: center;
   align-items: center;
   border: none;
-  padding: 0 24px;
   color: var(--helper-text-light-slate);
+}
+.checkbox-label a {
+  text-decoration-line: underline;
+  color: var(--primary-brand-iris);
+  transition: color var(--transition-hover);
+  padding-left: 4px;
+}
+.checkbox-label a:hover {
+  color: var(--pressed-state-ocean);
 }
 .icon-checkbox {
   position: absolute;
